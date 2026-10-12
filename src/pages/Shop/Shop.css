@@ -1,0 +1,334 @@
+.shop-page {
+  padding: 2.5rem 0 4rem;
+}
+
+.shop-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  flex-wrap: wrap;
+}
+
+.shop-title {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.shop-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.shop-controls-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mobile-filter-btn {
+  display: none;
+}
+
+.shop-sort-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sort-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.sort-select {
+  padding: 0.5rem 2rem 0.5rem 0.85rem;
+  font-size: 0.85rem;
+  width: auto;
+}
+
+.view-toggle-btns {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.view-btn {
+  background-color: var(--bg-card);
+  border: none;
+  padding: 0.55rem 0.75rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.view-btn.active,
+.view-btn:hover {
+  background-color: var(--brand-primary);
+  color: var(--text-inverted);
+}
+
+/* Shop Layout */
+.shop-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+/* Sidebar */
+.shop-sidebar {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.sidebar-header h3 {
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.reset-filter-btn {
+  background: none;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--brand-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.reset-filter-btn:hover {
+  text-decoration: underline;
+}
+
+.sidebar-close-mobile {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.filter-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.filter-options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.filter-cat-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.65rem;
+  background: none;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  text-align: left;
+  transition: all var(--transition-fast);
+}
+
+.filter-cat-btn:hover {
+  background-color: var(--bg-tertiary);
+  color: var(--brand-secondary);
+}
+
+.filter-cat-btn.active {
+  background-color: var(--bg-tertiary);
+  color: var(--brand-secondary);
+  font-weight: 700;
+}
+
+.count-pill {
+  font-size: 0.72rem;
+  padding: 0.15rem 0.45rem;
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-full);
+  color: var(--text-muted);
+}
+
+.price-range-inputs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.price-input {
+  padding: 0.5rem 0.65rem;
+  font-size: 0.85rem;
+}
+
+.price-sep {
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+.filter-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-checkbox-label input {
+  accent-color: var(--brand-secondary);
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.filter-switches {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+/* Products Section */
+.shop-products-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* Pagination */
+.pagination-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1.5rem 0;
+}
+
+.pagination-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.pagination-btn:hover:not(:disabled) {
+  border-color: var(--border-hover);
+  background-color: var(--bg-tertiary);
+}
+
+.pagination-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.pagination-numbers {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.pagination-num-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.pagination-num-btn:hover {
+  border-color: var(--brand-secondary);
+  color: var(--brand-secondary);
+}
+
+.pagination-num-btn.active {
+  background-color: var(--brand-primary);
+  color: var(--text-inverted);
+  border-color: var(--brand-primary);
+}
+
+/* Mobile responsive drawer */
+@media (max-width: 992px) {
+  .shop-layout {
+    grid-template-columns: 1fr;
+  }
+  .mobile-filter-btn {
+    display: inline-flex;
+  }
+  .shop-sidebar {
+    position: fixed;
+    top: 0;
+    left: -340px;
+    width: 320px;
+    height: 100vh;
+    z-index: 1200;
+    overflow-y: auto;
+    transition: left var(--transition-smooth);
+    border-radius: 0;
+  }
+  .shop-sidebar.mobile-open {
+    left: 0;
+  }
+  .sidebar-close-mobile {
+    display: block;
+  }
+  .mobile-filter-backdrop {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 1150;
+  }
+}

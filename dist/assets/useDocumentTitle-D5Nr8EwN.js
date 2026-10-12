@@ -1,0 +1,1 @@
+import{a as e,n as t}from"./jsx-runtime-D3jfb0Ew.js";var n=e(t(),1),r=e=>{(0,n.useEffect)(()=>{let t=document.title;return e?document.title=`${e} | E-Commerce`:document.title=`E-Commerce | Shop Smarter. Live Better.`,()=>{document.title=t}},[e])};export{r as t};

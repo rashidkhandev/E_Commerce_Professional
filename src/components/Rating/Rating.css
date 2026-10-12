@@ -1,0 +1,48 @@
+.rating-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  user-select: none;
+}
+
+.rating-stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.star-filled,
+.star-half {
+  color: var(--brand-accent);
+}
+
+.star-empty {
+  color: var(--border-hover);
+}
+
+.rating-score {
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-left: 0.2rem;
+}
+
+.rating-count {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.rating-star-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
+  color: var(--border-hover);
+  transition: transform var(--transition-fast), color var(--transition-fast);
+}
+
+.rating-star-btn:hover,
+.rating-star-btn.active {
+  color: var(--brand-accent);
+  transform: scale(1.15);
+}

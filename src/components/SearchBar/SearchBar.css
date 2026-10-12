@@ -1,0 +1,184 @@
+.search-bar-container {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+}
+
+.search-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  color: var(--text-muted);
+  pointer-events: none;
+  font-size: 0.95rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.65rem 2.5rem 0.65rem 2.75rem;
+  background-color: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  outline: none;
+  transition: all var(--transition-fast);
+}
+
+.search-input:focus {
+  background-color: var(--bg-input);
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+}
+
+.search-clear-btn {
+  position: absolute;
+  right: 0.85rem;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  transition: color var(--transition-fast);
+}
+
+.search-clear-btn:hover {
+  color: var(--text-primary);
+}
+
+/* Dropdown */
+.search-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  width: 100%;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xl);
+  overflow: hidden;
+  z-index: 500;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.search-dropdown-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.search-suggestion-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem 1rem;
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.search-suggestion-item:hover {
+  background-color: var(--bg-tertiary);
+}
+
+.suggestion-thumb {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-secondary);
+}
+
+.suggestion-info {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.suggestion-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.suggestion-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.suggestion-price {
+  color: var(--text-primary);
+}
+
+.search-view-all {
+  padding: 0.75rem 1rem;
+  background-color: var(--bg-secondary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--brand-secondary);
+  text-align: center;
+  cursor: pointer;
+  border-top: 1px solid var(--border-color);
+  transition: background-color var(--transition-fast);
+}
+
+.search-view-all:hover {
+  background-color: var(--bg-tertiary);
+}
+
+.search-empty-state {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.search-recents-list {
+  padding: 0.5rem 0.75rem 1rem;
+}
+
+.recent-tags-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.recent-tag-btn {
+  background-color: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.recent-tag-btn:hover {
+  background-color: var(--border-hover);
+}

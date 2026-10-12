@@ -1,0 +1,46 @@
+.not-found-page {
+  padding: 6rem 1rem 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found-card {
+  max-width: 580px;
+  text-align: center;
+  padding: 4rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.error-code {
+  font-size: clamp(4.5rem, 8vw, 7rem);
+  font-weight: 900;
+  font-family: var(--font-display);
+  line-height: 1;
+  background: linear-gradient(135deg, var(--brand-secondary) 0%, var(--brand-primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.error-title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.error-desc {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.error-actions-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
